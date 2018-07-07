@@ -48,10 +48,10 @@ client.on("guildMemberRemove", member => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith(prefix + "flip")) {
-    const coin = ['Orzeł','Reszka'];
-    const random = Math.floor(Math.random()*2);
-    message.channel.send("**Wypadło na** | "+coin[random]);
+  if (message.content.startsWith(prefix + "$ ")) {
+    const coin = ['Udane','Nieudane',];
+    const random = Math.floor(Math.random()*3);
+    message.channel.send("| "+coin[random] |);
   }
 });
 
