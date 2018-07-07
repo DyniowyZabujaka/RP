@@ -49,8 +49,8 @@ client.on("guildMemberRemove", member => {
 
 client.on('message', message => {
   if (message.content.startsWith(prefix + "$ ")) {
-    const coin = ['Udane','Nieudane',];
-    const random = Math.floor(Math.random()*3);
+    const coin = ['Udane', 'Nieudane',];
+    const random = Math.floor(Math.random()*2);
     message.channel.send("| "+coin[random] |);
   }
 });
