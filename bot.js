@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith('*szuka ')) {
+  if (message.content.startsWith('szuka')) {
     const coin = ['Znalazłeś','Nie znalazłeś'];
     const random = Math.floor(Math.random()*2);
     message.channel.send(" | "+coin[random]);
