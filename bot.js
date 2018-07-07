@@ -34,52 +34,6 @@ client.on('message', message => {
   }
 });
 
-client.on("guildMemberAdd", member => {
-  let guild = member.guild;
-    guild.defaultChannel.sendMessage(`:eggplant:**${member}** Właśnie dołączył na serwer! Zerknij do regulaminu i baw się dobrze. :eggplant:`);
-    member.user.sendFile('https://i.imgur.com/V5vQrF3.png', 'TwojaStara.png', 'testmessage');
-    member.user.sendMessage(`Witaj na serwerze **#TeamBakłażan** :hand_splayed:\n\nZalecamy zapoznać się z kanałem **#zasady-info**\n\nJako serwer oferujemy miłą atmosfere jak i częste konkursy.\n\nCała administracja życzy dobrej zabawy.\n\nhttps://discord.gg/tzEbMpq`);
-});
-
-client.on("guildMemberRemove", member => {
-  let guild = member.guild;
-    guild.defaultChannel.sendMessage(`:rage: **${member.user.username}** Opuścił nasze grono [*] :rage:`);
-    
-});
-
-client.on('message', message => {
-  if (message.content.startsWith(prefix + "$ ")) {
-    const coin = ['Udane', 'Nieudane',];
-    const random = Math.floor(Math.random()*2);
-    message.channel.send("| "+coin[random] |);
-  }
-});
-
-client.on('message', message => {
-  if (message.content === prefix + 'serverinfo') {
-    message.channel.send({embed: {
-  color: 3447003,
-  description: (`**Nazwa serwera**: ${message.guild.name}\n\n**Wszystkie osoby**: ${message.guild.memberCount}\n\n**Data utworzenia**: ${message.guild.createdAt}\n\n**ID**: ${message.guild.id}\n\n**Role**: ${message.guild.roles.size}\n\n**Właściciel**: ${message.guild.owner}`),
-  title: " ",
-  author: {
-  timestamp: new Date(),
-  footer: {
-  icon_url: client.user.avatarURL,
-  text: "© Example"
-    },
-  name: message.guild.name, 
-  icon_url: message.guild.iconURL
-    },
-  image: {
-  "url": " ",
-    },
-  thumbnail: {
-  "url": message.guild.iconURL
-    },
-}});
-  }
-});
-
 client.on('message', message => {
   if (message.content === prefix + 'ping') {
     message.channel.send({embed: {
