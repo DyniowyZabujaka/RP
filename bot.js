@@ -8,9 +8,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
   if (message.content.startsWith('*szuka ')) {
-    const coin = ['Znalazłeś','Nie znalazłeś'];
+    const coin = [' Znalazłeś',' Nie znalazłeś'];
     const random = Math.floor(Math.random()*2);
-    message.channel.send(" | "  +message.author   + coin[random]);
+    message.channel.send(" :rose: "  +message.author   + coin[random]);
   }
 });
 
