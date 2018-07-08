@@ -15,7 +15,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith(' szuka *')) {
+  if (message.content.startsWith('* szuka *')) {
     const coin2 = [' Znalazłeś',' Nie znalazłeś'];
     const random2 = Math.floor(Math.random()*2);
     message.channel.send(" :rose: "  +message.author   + coin2[random2]);
