@@ -14,6 +14,14 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content.startsWith(' szuka ')) {
+    const coin = [' Znalazłeś',' Nie znalazłeś'];
+    const random = Math.floor(Math.random()*2);
+    message.channel.send(" :rose: "  +message.author   + coin[random]);
+  }
+});
+
 client.on('message', async message => {
     if (message.content.startsWith('$clear')) {
      if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":potato: Nie masz uprawnien :) :potato:")
