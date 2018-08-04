@@ -7,6 +7,46 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+  if (message.content.startsWith('*Strzela ')) {
+    const coinq = [' Trafiłeś',' Nie trafiłeś'];
+    const randomq = Math.floor(Math.random()*2);
+    message.channel.send(" :rose: "  +message.author   + coinq[randomq]);
+  }
+});
+
+client.on('message', message => {
+  if (message.content.startsWith('*strzela ')) {
+    const coinw = [' Trafiłeś',' Nie trafiłeś'];
+    const randomw = Math.floor(Math.random()*2);
+    message.channel.send(" :rose: "  +message.author   + coinw[randomw]);
+  }
+});
+
+client.on('message', message => {
+  if (message.content.startsWith('/me Szuka ')) {
+    const coine = [' Znalazłeś',' Nie znalazłeś'];
+    const randome = Math.floor(Math.random()*2);
+    message.channel.send(" :rose: "  +message.author   + coine[randome]);
+  }
+});
+
+client.on('message', message => {
+  if (message.content.startsWith('/me szuka ')) {
+    const coinr = [' Znalazłeś',' Nie znalazłeś'];
+    const randomr = Math.floor(Math.random()*2);
+    message.channel.send(" :rose: "  +message.author   + coinr[randomr]);
+  }
+});
+
+client.on('message', message => {
+  if (message.content.startsWith('*Szuka ')) {
+    const coint = [' Znalazłeś',' Nie znalazłeś'];
+    const randomt = Math.floor(Math.random()*2);
+    message.channel.send(" :rose: "  +message.author   + coint[randomt]);
+  }
+});
+
+client.on('message', message => {
   if (message.content.startsWith('*szuka ')) {
     const coin = [' Znalazłeś',' Nie znalazłeś'];
     const random = Math.floor(Math.random()*2);
