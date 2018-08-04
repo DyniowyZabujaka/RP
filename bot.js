@@ -10,7 +10,7 @@ client.on('message', message => {
   if (message.content.startsWith('*Strzela ')) {
     const coinq = [' Trafiłeś',' Nie trafiłeś'];
     const randomq = Math.floor(Math.random()*2);
-    message.channel.send(" :rose: "  +message.author   + coinq[randomq]);
+    message.channel.send(" :gun:  "  +message.author   + coinq[randomq]);
   }
 });
 
@@ -18,7 +18,7 @@ client.on('message', message => {
   if (message.content.startsWith('*strzela ')) {
     const coinw = [' Trafiłeś',' Nie trafiłeś'];
     const randomw = Math.floor(Math.random()*2);
-    message.channel.send(" :rose: "  +message.author   + coinw[randomw]);
+    message.channel.send(" :gun:  "  +message.author   + coinw[randomw]);
   }
 });
 
