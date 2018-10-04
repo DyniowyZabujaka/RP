@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "$";
 
 client.on('guildMemberAdd', async member => {
-	const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+	const channel = member.guild.channels.find(ch => ch.name === 'rozmowy_off_rp');
 	if (!channel) return;
 
 	const canvas = Canvas.createCanvas(700, 250);
