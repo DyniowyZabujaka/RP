@@ -27,8 +27,8 @@ client.on("message", async message => {
         const embed = {
             "title": "📋 **Regulamin**",
             "description": `${sayMessage}`,
-            "color": 11041206
-            "footer": "d"
+            "color": 9241145,
+            "footer": "Regulamin może się zmienić"
         };
         message.channel.send({ embed });
 }
