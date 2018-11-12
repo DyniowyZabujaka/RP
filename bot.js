@@ -53,7 +53,7 @@ client.on("message", async message => {
         message.delete().catch(O_o => { });
         // And we get the bot to say the thing:
         const embed = {
-            "title": "🕶 **Wzór na postać**",
+            "title": "📜 **Wzór na stworzenie postaci**",
             "description": `${sayMessage}`,
             "color": 2421254
         };
